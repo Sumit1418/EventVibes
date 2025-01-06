@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #e6e7ee;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.user-details {
+    width: 800px;
+    height: 600px;
+    /* margin: 80px auto; */
+    padding: 20px 30px 30px 30px;
+    background-color: #e6e7ee;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.user-details-head {
+    color: #29a6a6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+.user-details-head h2 {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #e6e7ee;
+    border: 1px solid #d1d9e6;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border-radius: 10px;
+}
+
+.user-details-head a {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #e6e7ee;
+    border: 1px solid #aeb4bf;
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.user-details-head i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d1d9e6;
+    font-size: 20px;
+    color: #29a6a6;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border-radius: 50%;
+}
+
+.user-details-body {
+    background-color: #e6e7ee;
+    border: 1px solid #d1d9e6;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border-radius: 15px;
+    padding: 10px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.user-details form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.profile-pic {
+    width: 310px;
+    height: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #aeb4bf;
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 90%;
+    height: 90%;
+    border: 1px solid #515358;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    object-fit: cover;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.change-picture {
+    width: 100px;
+    height: 40px;
+    background-color: #29a6a6;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border: 1px solid #d1d9e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.change-picture:active {
+   background-color: #269c9c;
+   border: 1px solid #31344b;
+}
+
+.change-picture i {
+    margin-right: 5px;
+}
+
+.remove-picture {
+    width: 100px;
+    height: 40px;
+    background-color: #ee5555;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border: 1px solid #d1d9e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.remove-picture:active {
+    background-color: #e64c4c;
+    border: 1px solid #31344b;
+}
+
+.user-details-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.user-details-form-group {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d9e6;
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user-details-form-group input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.user-details-submit {
+    width: 100px;
+    height: 50px;
+    background-color: #e6e7ee;
+    color: #31344b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+    border: 1px solid #d1d9e6;
+}
+
+.user-details-submit:active{
+    box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    .user-details {
+        margin-top: 10px;
+        width: 100%;
+        height: fit-content;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .user-details-head {
+        height: 10%;
+        margin-bottom: 10px;
+    }
+    .user-details-body {
+        height: 90%;
+    }
+
+    .user-details-head h2 {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .user-details form {
+        flex-direction: column;
+    }
+
+    .profile-container {
+        width: 100%;
+        height: 35%;
+    }
+
+    .profile-pic {
+        width: 27vw;
+        height: 27vw;
+    }
+
+    .profile-buttons {
+        height: 20%;
+    }
+
+    .user-details-form {
+        width: 100%;
+        height: 65%;
+        margin-top: 10px;
+    }
+
+    .user-details-form-group {
+        height: 50px;
+    }
+
+    .user-details-form-group input {
+        font-size: 16px;
+    }
+
+    .user-details-submit {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .user-details {
+        width: 90%;
+    }
+
+    .profile-pic {
+        width: 38vw;
+        height: 38vw;
+    }
+}
+
+
+
